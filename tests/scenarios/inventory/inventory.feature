@@ -3,7 +3,6 @@ Feature: Inventory products
     Background:
         Given User navigate to the Website and login
 
-    @single
     Scenario: Product sorting
         When User clicks on the sorting dropdown
         Then User should see the sorting dropdown with the following options:
