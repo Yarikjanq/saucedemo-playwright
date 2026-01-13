@@ -1,0 +1,124 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inventory-products;product-sorting",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Product sorting",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69334299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigate to the Website and login",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4854684800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks on the sorting dropdown",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1054227600
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name (A to Z)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Name (Z to A)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Price (low to high)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Price (high to low)"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User should see the sorting dropdown with the following options:",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5357999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User selects \"Price (low to high)\" from the sorting dropdown",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1021965399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Products should be sorted by \"Price (low to high)\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@single",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "inventory-products",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inventory products",
+    "tags": [],
+    "uri": "tests\\scenarios\\inventory\\inventory.feature"
+  }
+]
