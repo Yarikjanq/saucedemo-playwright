@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "inventory-products;product-sorting",
+        "id": "inventory-products;reset-app-state",
         "keyword": "Scenario",
-        "line": 7,
-        "name": "Product sorting",
+        "line": 19,
+        "name": "Reset app state",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 30517100
+              "duration": 39503800
             }
           },
           {
@@ -27,88 +27,100 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7485442000
+              "duration": 4932507399
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
-            "name": "User clicks on the sorting dropdown",
+            "line": 20,
+            "name": "User clicks on the button \"Add to cart\" of product name \"Sauce Labs Bike Light\"",
             "match": {
-              "location": "tests\\steps\\inventory.steps.ts:7"
+              "location": "tests\\steps\\cart.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 1033055000
+              "duration": 1028749100
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Name (A to Z)"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Name (Z to A)"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Price (low to high)"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Price (high to low)"
-                    ]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "User should see the sorting dropdown with the following options:",
+            "line": 21,
+            "name": "User should see that the button changed to \"Remove\" of product name \"Sauce Labs Bike Light\"",
             "match": {
-              "location": "tests\\steps\\inventory.steps.ts:14"
+              "location": "tests\\steps\\cart.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 7099399
+              "duration": 6111799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "The cart count should be 1",
+            "match": {
+              "location": "tests\\steps\\cart.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3227299
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
-            "name": "User selects \"Price (low to high)\" from the sorting dropdown",
+            "line": 24,
+            "name": "User clicks on the burger menu",
             "match": {
-              "location": "tests\\steps\\inventory.steps.ts:27"
+              "location": "tests\\steps\\shared.step.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 1013339700
+              "duration": 1023594299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User clicks on \"Reset App State\" link",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1036622199
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
-            "name": "Products should be sorted by \"Price (low to high)\"",
+            "line": 26,
+            "name": "User should see that count of cart is empty",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:53"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1451100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 8739499
             }
           }
         ],
         "tags": [
           {
             "name": "@single",
-            "line": 6
+            "line": 18
           }
         ],
         "type": "scenario"

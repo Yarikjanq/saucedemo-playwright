@@ -7,27 +7,6 @@ import { ICustomWorld } from "../custom-world.js";
 let selectedProducts: number | null;
 
 When(
-  "User fills username {string} and password {string}",
-  async function (this: ICustomWorld, username: string, password: string) {
-    await this.page?.locator('[data-test="username"]').fill(username);
-    await this.page?.locator('[data-test="password"]').fill(password);
-  }
-);
-
-Then(
-  "User should be logged in successfully",
-  async function (this: ICustomWorld) {
-    await expect(this.page!).toHaveURL(
-      "https://www.saucedemo.com/inventory.html"
-    );
-
-    // або перевіряємо, що видно список продуктів
-    const inventoryList = this.page!.locator(".inventory_list");
-    await expect(inventoryList).toBeVisible();
-  }
-);
-
-When(
   "User clicks the {string} button",
   async function (this: ICustomWorld, buttonName: string) {
     await this.page?.getByRole("button", { name: buttonName }).click();
@@ -160,24 +139,3 @@ Then(
     expect(productLocator).toBe(selectedProducts);
   }
 );
-// const expectedColumns = dataTable.raw().flat();
-
-// const headerLocators = this.page!.locator(
-//   ".is-table__header-cell .is-table__hider"
-// );
-
-// await expect(headerLocators).toHaveText(expectedColumns);
-
-// const expected = dataTable
-//   .raw()
-//   .flat()
-//   .map((e) => e.trim())
-//   .sort();
-
-// const headers = await this.page!.locator(
-//   "thead tr .is-table__header-cell .is-table__hider"
-// ).allTextContents();
-
-// const actual = headers.map((e) => e.trim()).sort();
-
-// expect(actual).toEqual(expected);

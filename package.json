@@ -2,9 +2,7 @@
   "name": "saucedemo-playwright",
   "scripts": {
     "test": "cucumber-js",
-    "single": "cucumber-js -f @cucumber/pretty-formatter --tags=@single",
-    "single-debug": "cross-env PWDEBUG=1 cucumber-js --tags=@single",
-    "single-video": "cross-env PWVIDEO=1 cucumber-js --tags=@single"
+    "single": "cucumber-js -f @cucumber/pretty-formatter --tags=@single"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^12.5.0",

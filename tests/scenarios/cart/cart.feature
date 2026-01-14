@@ -13,6 +13,10 @@ Feature: Shopping cart
         And User should see only "Sauce Labs Bike Light" product in the cart
 
     Scenario: Remove product from cart
+        When User clicks on the button "Add to cart" of product name "Sauce Labs Bike Light"
+        Then User should see that the button changed to "Remove" of product name "Sauce Labs Bike Light"
+        And The cart count should be 1
+
         When User click on the shopping cart icon
         And User clicks on the "Remove" button
         Then Product "Sauce Labs Bike Light" should not be visible in the cart

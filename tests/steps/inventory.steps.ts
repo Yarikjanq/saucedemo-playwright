@@ -32,3 +32,29 @@ When(
     });
   }
 );
+
+Then(
+  "Products should be sorted by low to high",
+  async function (this: ICustomWorld) {
+    const productList = this.page!.locator('[data-test="inventory-list"]');
+
+    const pricesText = await productList
+      ?.locator('[data-test="inventory-item-price"]')
+      .allTextContents();
+
+    const prices = pricesText.map((price) => Number(price.replace("$", "")));
+
+    const sortedPrices = [...prices].sort((a, b) => a - b);
+
+    expect(prices).toEqual(sortedPrices);
+  }
+);
+
+Then(
+  "User should see that count of cart is empty",
+  async function (this: ICustomWorld) {
+    const cartCount = this.page!.locator('[data-test="shopping-cart-badge"]');
+
+    expect(cartCount).toBeHidden();
+  }
+);
