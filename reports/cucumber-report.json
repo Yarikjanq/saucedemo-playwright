@@ -4,291 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "about-page;navigate-to-about-page",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Navigate to about page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 131899200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User navigate to the Website and login",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7554062699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "User clicks on the burger menu",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1031683199
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "All Items"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "About"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Logout"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Reset App State"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "User should see a popup menu with the following items:",
-            "match": {
-              "location": "tests\\steps\\about.steps.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 511871099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "User hovers over \"About\" link",
-            "match": {
-              "location": "tests\\steps\\about.steps.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1045673200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "User should see \"Green\" color of \"About\" link",
-            "match": {
-              "location": "tests\\steps\\about.steps.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11147399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "User clicks on \"About\" link",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1170305200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "User should be redirected to \"https://saucelabs.com/\"",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3244181499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
-            "name": "User should see \"Build apps users love with AI-driven quality\" on the page",
-            "match": {
-              "location": "tests\\steps\\about.steps.ts:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 50093400
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 17365999
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "about-page",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "About page",
-    "tags": [],
-    "uri": "tests\\scenarios\\about\\about.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "shopping-cart;view-product-in-cart",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "View product in cart",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 29219000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User navigate to the Website and login",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4656018599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 7,
-            "name": "User clicks on the button \"Add to cart\" of product name \"Sauce Labs Bike Light\"",
-            "match": {
-              "location": "tests\\steps\\cart.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1037746800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "User should see that the button changed to \"Remove\" of product name \"Sauce Labs Bike Light\"",
-            "match": {
-              "location": "tests\\steps\\cart.ts:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4935199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "The cart count should be 1",
-            "match": {
-              "location": "tests\\steps\\cart.ts:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3272000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "User click on the shopping cart icon",
-            "match": {
-              "location": "tests\\steps\\cart.ts:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1037307199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "User should be on the \"https://www.saucedemo.com/cart.html\"",
-            "match": {
-              "location": "tests\\steps\\cart.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3579799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "User should see only \"Sauce Labs Bike Light\" product in the cart",
-            "match": {
-              "location": "tests\\steps\\cart.ts:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2851899
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 4419700
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
         "id": "shopping-cart;remove-product-from-cart",
         "keyword": "Scenario",
         "line": 15,
@@ -299,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37675299
+              "duration": 46530600
             }
           },
           {
@@ -312,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4566491699
+              "duration": 5020783499
             }
           },
           {
@@ -325,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1025078600
+              "duration": 1030127499
             }
           },
           {
@@ -338,20 +53,21 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7825199
+              "duration": 6728100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "The cart count should be 1",
+            "name": "The cart count should be 2",
             "match": {
               "location": "tests\\steps\\cart.ts:53"
             },
             "result": {
-              "status": "passed",
-              "duration": 2448599
+              "status": "failed",
+              "duration": 5011595400,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-test=\"shopping-cart-badge\"]')\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"shopping-cart-badge\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <span class=\"shopping_cart_badge\" data-test=\"shopping-cart-badge\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"1\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\Admin\\Desktop\\saucedemo-playwright\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at CustomWorld.<anonymous> (C:\\Users\\Admin\\Desktop\\saucedemo-playwright\\tests\\steps\\cart.ts:58:29)"
             }
           },
           {
@@ -363,8 +79,8 @@
               "location": "tests\\steps\\cart.ts:62"
             },
             "result": {
-              "status": "passed",
-              "duration": 1034695999
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -376,8 +92,8 @@
               "location": "tests\\steps\\cart.ts:83"
             },
             "result": {
-              "status": "passed",
-              "duration": 1026191499
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -389,8 +105,8 @@
               "location": "tests\\steps\\cart.ts:92"
             },
             "result": {
-              "status": "passed",
-              "duration": 3624599
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -402,8 +118,8 @@
               "location": "tests\\steps\\cart.ts:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 1027506400
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -415,8 +131,8 @@
               "location": "tests\\steps\\cart.ts:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 1995299
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -424,116 +140,22 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 4719200
-            }
+              "duration": 58588700
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBGQUlMRUQuIER1cmF0aW9uOiA1cw==",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "shopping-cart;check-cart-with-multiple-products",
-        "keyword": "Scenario",
-        "line": 27,
-        "name": "Check cart with multiple products",
-        "steps": [
+        "tags": [
           {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 61034799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User navigate to the Website and login",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4704970900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "User adds all products to the cart",
-            "match": {
-              "location": "tests\\steps\\cart.ts:106"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6170882700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "Cart should display the total number of added products",
-            "match": {
-              "location": "tests\\steps\\cart.ts:115"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3692200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 31,
-            "name": "User click on the shopping cart icon",
-            "match": {
-              "location": "tests\\steps\\cart.ts:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1025710599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 32,
-            "name": "User should be on the \"https://www.saucedemo.com/cart.html\"",
-            "match": {
-              "location": "tests\\steps\\cart.ts:16"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7362000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "User should see the selected quantity of products",
-            "match": {
-              "location": "tests\\steps\\cart.ts:132"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2222600
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 4747300
-            }
+            "name": "@single",
+            "line": 14
           }
         ],
-        "tags": [],
         "type": "scenario"
       }
     ],
@@ -543,251 +165,5 @@
     "name": "Shopping cart",
     "tags": [],
     "uri": "tests\\scenarios\\cart\\cart.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "inventory-products;product-sorting",
-        "keyword": "Scenario",
-        "line": 7,
-        "name": "Product sorting",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 25812299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User navigate to the Website and login",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4617904600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "User clicks on the sorting dropdown",
-            "match": {
-              "location": "tests\\steps\\inventory.steps.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1041465399
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "Name (A to Z)"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Name (Z to A)"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Price (low to high)"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Price (high to low)"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 9,
-            "name": "User should see the sorting dropdown with the following options:",
-            "match": {
-              "location": "tests\\steps\\inventory.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6490099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "User selects \"Price (low to high)\" from the sorting dropdown",
-            "match": {
-              "location": "tests\\steps\\inventory.steps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1011236100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "Products should be sorted by low to high",
-            "match": {
-              "location": "tests\\steps\\inventory.steps.ts:36"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10523200
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 4388100
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "inventory-products;reset-app-state",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Reset app state",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 27696600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "User navigate to the Website and login",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4628438699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "User clicks on the button \"Add to cart\" of product name \"Sauce Labs Bike Light\"",
-            "match": {
-              "location": "tests\\steps\\cart.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1033026200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "User should see that the button changed to \"Remove\" of product name \"Sauce Labs Bike Light\"",
-            "match": {
-              "location": "tests\\steps\\cart.ts:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9766799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "The cart count should be 1",
-            "match": {
-              "location": "tests\\steps\\cart.ts:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5379399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "User clicks on the burger menu",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:19"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1033449400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "User clicks on \"Reset App State\" link",
-            "match": {
-              "location": "tests\\steps\\shared.step.ts:23"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1025916299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "User should see that count of cart is empty",
-            "match": {
-              "location": "tests\\steps\\inventory.steps.ts:53"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3458499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 8727800
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "inventory-products",
-    "line": 1,
-    "keyword": "Feature",
-    "name": "Inventory products",
-    "tags": [],
-    "uri": "tests\\scenarios\\inventory\\inventory.feature"
   }
 ]
