@@ -15,7 +15,6 @@ Feature: Inventory products
         When User selects "Price (low to high)" from the sorting dropdown
         Then Products should be sorted by low to high
 
-
     Scenario: Reset app state
         When User clicks on the button "Add to cart" of product name "Sauce Labs Bike Light"
         Then User should see that the button changed to "Remove" of product name "Sauce Labs Bike Light"

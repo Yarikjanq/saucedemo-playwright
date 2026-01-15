@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "shopping-cart;remove-product-from-cart",
+        "id": "about-page;navigate-to-about-page",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Remove product from cart",
+        "line": 6,
+        "name": "Navigate to about page",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 46530600
+              "duration": 46379500
             }
           },
           {
@@ -27,7 +27,304 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5020783499
+              "duration": 787729399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User clicks on the burger menu",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18028800
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "All Items"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "About"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Logout"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Reset App State"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User should see a popup menu with the following items:",
+            "match": {
+              "location": "tests\\steps\\about.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 525999400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User hovers over \"About\" link",
+            "match": {
+              "location": "tests\\steps\\about.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52828500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "User should see \"Green\" color of \"About\" link",
+            "match": {
+              "location": "tests\\steps\\about.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10865200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "User clicks on \"About\" link",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133857199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "User should be redirected to \"https://saucelabs.com/\"",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3778566900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User should see \"Build apps users love with AI-driven quality\" on the page",
+            "match": {
+              "location": "tests\\steps\\about.steps.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41813600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24230300
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAwcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "about-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "About page",
+    "tags": [],
+    "uri": "tests\\scenarios\\about\\about.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "shopping-cart;view-product-in-cart",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "View product in cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43051800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigate to the Website and login",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 669983999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User clicks on the button \"Add to cart\" of product name \"Sauce Labs Bike Light\"",
+            "match": {
+              "location": "tests\\steps\\cart.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69527000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "User should see that the button changed to \"Remove\" of product name \"Sauce Labs Bike Light\"",
+            "match": {
+              "location": "tests\\steps\\cart.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9320800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "The cart count should be 1",
+            "match": {
+              "location": "tests\\steps\\cart.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10256800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User click on the shopping cart icon",
+            "match": {
+              "location": "tests\\steps\\cart.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50107599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "User should be on the \"https://www.saucedemo.com/cart.html\"",
+            "match": {
+              "location": "tests\\steps\\cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9518000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User should see only \"Sauce Labs Bike Light\" product in the cart",
+            "match": {
+              "location": "tests\\steps\\cart.ts:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7848399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 9562399
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAwcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "shopping-cart;remove-product-from-cart",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Remove product from cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39637999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigate to the Website and login",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 663427499
             }
           },
           {
@@ -40,7 +337,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1030127499
+              "duration": 34223599
             }
           },
           {
@@ -53,21 +350,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6728100
+              "duration": 4586699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 18,
-            "name": "The cart count should be 2",
+            "name": "The cart count should be 1",
             "match": {
               "location": "tests\\steps\\cart.ts:53"
             },
             "result": {
-              "status": "failed",
-              "duration": 5011595400,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-test=\"shopping-cart-badge\"]')\nExpected: \u001b[32m\"2\"\u001b[39m\nReceived: \u001b[31m\"1\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.text\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"shopping-cart-badge\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <span class=\"shopping_cart_badge\" data-test=\"shopping-cart-badge\">1</span>\u001b[22m\n\u001b[2m      - unexpected value \"1\"\u001b[22m\n\n    at Proxy.<anonymous> (C:\\Users\\Admin\\Desktop\\saucedemo-playwright\\node_modules\\playwright\\lib\\matchers\\expect.js:224:24)\n    at CustomWorld.<anonymous> (C:\\Users\\Admin\\Desktop\\saucedemo-playwright\\tests\\steps\\cart.ts:58:29)"
+              "status": "passed",
+              "duration": 7125799
             }
           },
           {
@@ -79,8 +375,8 @@
               "location": "tests\\steps\\cart.ts:62"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 37863400
             }
           },
           {
@@ -92,8 +388,8 @@
               "location": "tests\\steps\\cart.ts:83"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 45328299
             }
           },
           {
@@ -105,8 +401,8 @@
               "location": "tests\\steps\\cart.ts:92"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3575800
             }
           },
           {
@@ -118,8 +414,8 @@
               "location": "tests\\steps\\cart.ts:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 30898199
             }
           },
           {
@@ -131,8 +427,8 @@
               "location": "tests\\steps\\cart.ts:16"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4188799
             }
           },
           {
@@ -140,22 +436,128 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 58588700
+              "duration": 5778700
             },
             "embeddings": [
               {
-                "data": "U3RhdHVzOiBGQUlMRUQuIER1cmF0aW9uOiA1cw==",
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAwcw==",
                 "mime_type": "text/plain"
               }
             ]
           }
         ],
-        "tags": [
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "shopping-cart;check-cart-with-multiple-products",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Check cart with multiple products",
+        "steps": [
           {
-            "name": "@single",
-            "line": 14
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39128800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigate to the Website and login",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 680801499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "User adds all products to the cart",
+            "match": {
+              "location": "tests\\steps\\cart.ts:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215469199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "Cart should display the total number of added products",
+            "match": {
+              "location": "tests\\steps\\cart.ts:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5932600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "User click on the shopping cart icon",
+            "match": {
+              "location": "tests\\steps\\cart.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30681499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "User should be on the \"https://www.saucedemo.com/cart.html\"",
+            "match": {
+              "location": "tests\\steps\\cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3444499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "User should see the selected quantity of products",
+            "match": {
+              "location": "tests\\steps\\cart.ts:132"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3314399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5824700
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAwcw==",
+                "mime_type": "text/plain"
+              }
+            ]
           }
         ],
+        "tags": [],
         "type": "scenario"
       }
     ],
@@ -165,5 +567,268 @@
     "name": "Shopping cart",
     "tags": [],
     "uri": "tests\\scenarios\\cart\\cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inventory-products;product-sorting",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Product sorting",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40240900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigate to the Website and login",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 635610800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User clicks on the sorting dropdown",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43507100
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name (A to Z)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Name (Z to A)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Price (low to high)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Price (high to low)"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User should see the sorting dropdown with the following options:",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9449900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "User selects \"Price (low to high)\" from the sorting dropdown",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18783000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Products should be sorted by low to high",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12184999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4877899
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAwcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory-products;reset-app-state",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Reset app state",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30810100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigate to the Website and login",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 630318300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "User clicks on the button \"Add to cart\" of product name \"Sauce Labs Bike Light\"",
+            "match": {
+              "location": "tests\\steps\\cart.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26534700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "User should see that the button changed to \"Remove\" of product name \"Sauce Labs Bike Light\"",
+            "match": {
+              "location": "tests\\steps\\cart.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5579899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "The cart count should be 1",
+            "match": {
+              "location": "tests\\steps\\cart.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6648800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "User clicks on the burger menu",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49965799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "User clicks on \"Reset App State\" link",
+            "match": {
+              "location": "tests\\steps\\shared.step.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 930155500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "User should see that count of cart is empty",
+            "match": {
+              "location": "tests\\steps\\inventory.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3090399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 7110700
+            },
+            "embeddings": [
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOiAwcw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@single",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "inventory-products",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inventory products",
+    "tags": [],
+    "uri": "tests\\scenarios\\inventory\\inventory.feature"
   }
 ]

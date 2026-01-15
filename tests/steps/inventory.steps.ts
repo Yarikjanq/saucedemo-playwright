@@ -55,6 +55,6 @@ Then(
   async function (this: ICustomWorld) {
     const cartCount = this.page!.locator('[data-test="shopping-cart-badge"]');
 
-    expect(cartCount).toBeHidden();
+    await expect(cartCount).not.toBeVisible();
   }
 );

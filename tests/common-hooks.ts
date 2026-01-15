@@ -17,7 +17,10 @@ const tracesDir = "traces";
 setDefaultTimeout(30_000);
 
 BeforeAll(async function () {
-  browser = await chromium.launch({ headless: true, slowMo: 1000 });
+  browser = await chromium.launch({
+    // headless: false,
+    // slowMo: 1000
+  });
 });
 
 Before(async function (this: ICustomWorld, { pickle }: ITestCaseHookParameter) {
