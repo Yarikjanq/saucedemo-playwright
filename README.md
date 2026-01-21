@@ -20,6 +20,16 @@ npm run test
 
 ---
 
+## Run Specific Scenario by Tag
+
+To run a specific scenario or feature by tag, use:
+```bash
+npm run single
+```
+By default, this runs scenarios tagged with `@single`. You can change the tag in the script or add more scripts for other tags as needed.
+
+---
+
 ## Test Reports
 
 ### Cucumber JSON/HTML Report
@@ -57,7 +67,9 @@ The project includes a sample workflow for GitHub Actions in `.github/workflows/
 
 ## Useful Commands
 
-- Run tests: `npm run test`
+- Run all tests: `npm run test`
+- Run tests with @single tag: `npm run single`
 - Generate Cucumber HTML report: `npm run report`
 
 ---
+
