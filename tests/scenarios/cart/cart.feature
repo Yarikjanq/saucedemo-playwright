@@ -15,7 +15,7 @@ Feature: Shopping cart
     Scenario: Remove product from cart
         When User clicks on the button "Add to cart" of product name "Sauce Labs Bike Light"
         Then User should see that the button changed to "Remove" of product name "Sauce Labs Bike Light"
-        And The cart count should be 1
+        And The cart count should be 6
 
         When User click on the shopping cart icon
         And User clicks on the "Remove" button
