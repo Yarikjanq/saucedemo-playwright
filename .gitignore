@@ -1,8 +1,14 @@
-
-# Playwright
+# Node dependencies
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+
+# Test results and reports
+playwright-report/
+reports/
+test-results/
+traces/
+
+# Environment files
+.env
+
+# VSCode settings
+.vscode/
